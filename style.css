@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    max-width: 1580px;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.face{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+}
+
+.logo a{
+    font-size: 50px;
+}
+
+header > .face{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.menu{
+   transition: ease-out;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 40px 40px;
+}
+
+header #dark{
+    background-color: #000;
+    color: #7c7b7b;
+    border: none;
+    font-size: 30px;
+}
+
+header a{
+    color: #ffffff88;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:#fff;
+    transform: scale(1.05);
+}
+
+#botao{
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    font-weight: 600;
+    border-radius: 27px;
+    background-color: rgb(233, 211, 10);
+    border-style: none;
+}
+
+main .body-info{
+    margin-top: 60px;
+}
+
+.box{
+    width: 1380px;
+    padding: 0 40px;
+    padding-bottom: 40px;
+}
+
+.info{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.img-cripto{
+    width: 1380px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.img-cripto img{
+    height: 25em;
+    margin: 70px auto;
+    padding: 0 40px
+}
+.info_{
+    padding: 70px 40px
+}
+
+section h1{
+    font-size: 40px;
+}
+
+section h3{
+    font-size: 25px;
+}
+
+section h2{
+    font-size: 40px;
+}
+
+section p{
+    color: #7c7b7b;
+}
+
+span{
+    color: rgb(0, 184, 24);
+}
+
+.content{
+    margin-top: 30px;
+    padding: 0 40px;
+}
+
+@media(max-width: 985px){
+    header .face{
+        height: 70px;
+    }
+    
+    header .menu{
+        visibility: hidden;
+    }
+    section .flex{
+        flex-direction: column;
+    }
+
+    .img-cripto{
+        width: 380px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .img-cripto img{
+        height: 14.6em;
+        margin: 70px auto;
+        padding: 0 40px
+    }
+    .info_{
+        padding: 40px 40px;
+    }
+}
